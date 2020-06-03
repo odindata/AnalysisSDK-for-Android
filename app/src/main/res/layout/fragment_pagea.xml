@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@mipmap/icon_page_a" />
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            android:background="@color/colorDarkBlack"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PageA\n(向左滑动跳转到PageB)"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

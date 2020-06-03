@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.odin.analysis.demo">
+
+    <!--OdinAnalysisSDK所需要的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".OdinApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--申请的奥丁产品的AppKey和AppSecret以及渠道-->
+        <meta-data
+            android:name="Odin-AppKey"
+            android:value="985459861c2c4e7b8f4f2c7245e56448" />
+
+        <meta-data
+            android:name="Odin-AppSecret"
+            android:value="b250f2ba017048e88275154a62ed1bce" />
+
+        <meta-data
+            android:name="Odin-Channel"
+            android:value="小米应用商店" />
+
+        <activity android:name=".ui.activity.FragmentActivity" />
+        <activity android:name=".ui.activity.BaseInfoActivity" />
+        <activity android:name=".ui.activity.EventInfoActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

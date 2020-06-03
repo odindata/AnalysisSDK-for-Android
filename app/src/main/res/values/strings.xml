@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OdinAnalysis</string>
+
+    <string name="str_event_title">%s 事件详情</string>
+    <string name="str_event_name">事件名称：%s</string>
+    <string name="str_event_description">事件描述：%s</string>
+    <string name="str_event_start">模拟触发</string>
+    <string name="str_event_end">模拟完毕</string>
+    <string name="str_event_attribute">属性信息</string>
+    <string name="str_base_info_title">基础信息</string>
+    <string name="str_sdk_info">SDK基础信息</string>
+    <string name="str_device_info">硬件基础信息</string>
+    <string name="str_user_account">用户账号</string>
+    <string name="str_user_password">密码</string>
+    <string name="str_login">登录</string>
+    <string name="str_register">注册</string>
+    <string name="str_nickname">昵称</string>
+    <string name="str_sex">性别</string>
+    <string name="str_dialog_event">触发%s事件，采集结果如下</string>
+    <string name="str_operation_success">操作成功</string>
+    <string name="str_ensure">确定</string>
+    <string name="str_error_title">error title</string>
+    <string name="str_error_content">错误！</string>
+    <string name="str_extra_info">说明： \n模拟浏览页面：从PageA跳转到PageB并访问%s。\n该模拟过程，以PageB为主要对象，即当前页id默认为PageB。</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#4f515a</color>
+    <color name="colorDarkBlack">#999999</color>
+    <color name="colorHeader">#E7E7E7</color>
+    <color name="colorBlue">#04cb94</color>
+    <color name="colorShape">#b1b1b1</color>
+    <color name="colorGray">#f6f6f7</color>
+
+    <color name="colorTitle">#575962</color>
+    <color name="colorEventTitle">#31333e</color>
+
+    <color name="colorDialogTile">#f5f7f9</color>
+    <color name="colorBar">#55acee</color>
+    <color name="colorExtra">#999999</color>
+</resources>

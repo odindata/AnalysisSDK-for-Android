@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:scaleType="fitStart"
+            android:src="@mipmap/icon_page_b" />
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            android:background="@color/colorDarkBlack"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PageB\n(源于PageA停留当前页面10s)\n点击'模拟完毕'查看采集结果"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send_event_page"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_button"
+            android:text="@string/str_event_end"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+</LinearLayout>
