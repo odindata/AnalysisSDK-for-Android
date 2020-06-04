@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.odin.analysis.OdinAnalysis;
 import com.odin.analysis.demo.BaseActivity;
 import com.odin.analysis.demo.Constant;
 import com.odin.analysis.demo.Global;
@@ -135,14 +134,12 @@ public class EventInfoActivity extends BaseActivity {
             EventShowData eventShowData = null;
             if (resultCode == Constant.EVENT.RESULT_CODE_LOGIN) {
                 if (Global.getUserId() != null) {
-                    //收集登录事件，收集信息：用户账户，是否登录成功
-                    OdinAnalysis.login(Global.getUserId(), true);
+                    EventApi.loginEvent(Constant.EVENT.EVENT_CODE_LOGIN, Global.getUserId());
                 }
                 eventShowData = (EventShowData) data.getSerializableExtra(Constant.EVENT.EXTRA_EVENT_LOGIN);
             } else if (resultCode == Constant.EVENT.RESULT_CODE_REGISTER) {
                 if (Global.getUserId() != null) {
-                    //收集注册事件，收集信息：用户账户
-                    OdinAnalysis.register(Global.getUserId());
+                    EventApi.registerEvent(Constant.EVENT.EVENT_CODE_REGISTER, Global.getUserId());
                 }
                 eventShowData = (EventShowData) data.getSerializableExtra(Constant.EVENT.EXTRA_EVENT_REGISTER);
             } else if (resultCode == Constant.EVENT.RESULT_CODE_PAGE_VIEW) {

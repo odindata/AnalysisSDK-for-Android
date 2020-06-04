@@ -13,6 +13,12 @@ import java.util.HashMap;
  */
 public class EventApi {
 
+    /**
+     * 收集登录事件
+     *
+     * @param event_code 事件code
+     * @param user_id    用户id
+     */
     public static void loginEvent(String event_code, String user_id) {
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("event_code", event_code);
@@ -20,6 +26,12 @@ public class EventApi {
         OdinAnalysis.trackEvent(Constant.EVENT.EVENT_NAME_LOGIN, hashMap);
     }
 
+    /**
+     * 收集注册事件
+     *
+     * @param event_code 事件code
+     * @param user_id    用户id
+     */
     public static void registerEvent(String event_code, String user_id) {
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("event_code", event_code);
@@ -28,7 +40,7 @@ public class EventApi {
     }
 
     /**
-     * 收集支付事件
+     * 收集获取验证码事件
      *
      * @param event_code   事件code
      * @param event_id     事件id
@@ -76,7 +88,7 @@ public class EventApi {
     }
 
     /**
-     * 收集支付事件
+     * 收集分享事件
      *
      * @param event_code       事件code
      * @param event_id         事件id
@@ -102,7 +114,7 @@ public class EventApi {
     }
 
     /**
-     * 收集阅读事件
+     * 收集评论事件
      *
      * @param event_code       事件code
      * @param event_id         事件id

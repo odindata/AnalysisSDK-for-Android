@@ -11,6 +11,5 @@ public class OdinApplication extends Application {
         super.onCreate();
         //初始化OdinAnalysisSDK，使用功能前必须调用
         OdinAnalysis.init(this);
-        OdinAnalysis.setDebugMode(true);
     }
 }
